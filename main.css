@@ -1,7 +1,13 @@
+@font-face {
+  font-family: 'figtree';
+  src: url(/assets/fonts/Figtree-VariableFont_wght.ttf) format('truetype');
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'figtree',sans-serif;
 }
 body {
   font-size: 16px;
@@ -30,7 +36,7 @@ body {
 flex-direction: column; */
   overflow: hidden;
 }
-.card img {
+.innerCard > img {
   width: 100%;
   border-radius: 10px;
   margin-bottom: 20px;
@@ -42,14 +48,19 @@ flex-direction: column; */
   background: hsl(47, 88%, 63%);
   display: inline-block;
   margin-bottom: 10px;
+  font-weight: 800;
 }
 .releaseDate {
   margin-bottom: 20px;
   color: hsl(0, 0%, 7%);
+  font-weight: 500;
+  font-size: 14px;
 }
 .innerCard h2 {
+  font-size: 20px;
   margin-bottom: 20px;
   color: hsl(0, 0%, 7%);
+  font-weight: 800;
 }
 .innerCard h2:hover {
   color: hsl(47, 88%, 63%);
@@ -58,16 +69,22 @@ flex-direction: column; */
 .desc {
   color: hsl(0, 0%, 42%);
   margin-bottom: 20px;
+  font-size: 14px;
 }
-.authorPart {
-  height: 40px;
+.author-section {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
 }
 
-.authorPart img {
+.author-image {
+  border-radius: 50%;
   width: 30px;
   height: 30px;
   margin-right: 10px;
-  /* display: none; */
+}
 
-  display: inline;
+.author-name {
+  font-size: 14px;
+  font-weight: 800;
 }
